@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+       
+    </style>
+</head>
+<body>
+    <button id="transformer">WOOOHOOOO</button>
+    <div class="parent">
+        <div class="container" id="box-parent">
+            <div class="login">
+                <div class="box">
+                    <h2>Log in</h2>
+                    <div class="username">
+                        <input type="text" name="" id="" placeholder="Username">
+                        <!-- <label for="">Username</label> -->
+                    </div>
+                    <div class="pas">
+                        <input type="password" name="" id="passwords" placeholder="Password">
+                        <img src="../main/eye-icons/hidden.png" alt="" id="eye-icon">
+                        <!-- <label for="">Password</label> -->
+                    </div>
+                    <button>SIGN IN</button>
+                    <p>Forgot <span>Username/Password</span>?</p>
+
+                </div>
+            </div>
+            <div class="signup">
+                <div class="box">
+                    <h2>Sign Up</h2>
+                <div class="name">
+                    <input type="text" name="" id="" placeholder="First Name" >
+                    <input type="text" name="" id="" placeholder="Last Name">
+                </div>
+                <div class="email">
+                    <input type="text" name="" id="" placeholder="E-mail">
+                </div>
+                <div class="pass">
+                    <input type="password" name="" id="passwords2" placeholder="Password">
+                        <img src="../main/eye-icons/hidden.png" alt="" id="eye-icon2"> 
+                </div>
+                <div class="confirmpass">
+                    <input type="password" name="" id="passwords3" placeholder="Password">
+                        <img src="../main/eye-icons/hidden.png" alt="" id="eye-icon3"> 
+                </div>
+                <div class="accept">
+                    <input type="checkbox" name="" id="">
+                    <label for="">I accept the Terms of Uses & Privacy Policy </label>
+                </div>
+                <button>CREATE ACCOUNT</button>
+                </div>
+                
+            </div>
+            <div id="box" class="cover">
+                <button class="change" id="btn" >LOG IN</button>
+            </div>
+        </div>
+    </div>
+
+    
+    <script>
+        let temp=30;
+        let inner="SIGN UP";
+        let button=document.getElementById("btn");
+        let ele=document.getElementById("box");
+        button.addEventListener('click',function(){
+            ele.style.transform = "translateX(" + temp + "vw)";
+            button.style.transform="translateX(" + temp/20 + "vw)";
+            button.innerHTML=inner;
+            if(temp==30){
+                temp=0;
+                inner="LOG IN";
+            }
+            else{
+                temp=30;
+                inner="SIGN UP";
+            }
+        });
+        button.addEventListener('click',function(){
+            let parent=document.getElementById("box-parent");
+            parent.parentElement.setAttribute("style","filter:blur(2px);");
+            let elements=document.getElementsByTagName("input");
+            let index=0;
+            for(index=0;index<elements.length;index++){
+                elements[index].setAttribute("disabled","disabled");
+                elements[index].value='';
+            }
+            setTimeout( function(){
+                for(index=0;index<elements.length;index++){
+                    elements[index].removeAttribute("disabled","disabled");
+                    console.log("wooohooo")
+                }
+                parent.parentElement.setAttribute("style","filter:blur(0px);");
+            },800)
+            
+        })
+
+        let eyeicon=document.getElementById("eye-icon");
+        let pass=document.getElementById("passwords");
+        eyeicon.onclick=function(){
+            if(pass.type=="password"){
+                pass.type="text";
+                eyeicon.src="../main/eye-icons/eye.png";
+            }
+            else{
+                pass.type="password";
+                eyeicon.src="../main/eye-icons/hidden.png";
+            }
+        }
+
+
+
+        let eyeicon2=document.getElementById("eye-icon2");
+        let pass2=document.getElementById("passwords2");
+        eyeicon2.onclick=function(){
+            if(pass2.type=="password"){
+                pass2.type="text";
+                eyeicon2.src="../main/eye-icons/eye.png";
+            }
+            else{
+                pass2.type="password";
+                eyeicon2.src="../main/eye-icons/hidden.png";
+            }
+        }
+
+
+        let eyeicon3=document.getElementById("eye-icon3");
+        let pass3=document.getElementById("passwords3");
+        eyeicon3.onclick=function(){
+            if(pass3.type=="password"){
+                pass3.type="text";
+                eyeicon3.src="../main/eye-icons/eye.png";
+            }
+            else{
+                pass3.type="password";
+                eyeicon3.src="../main/eye-icons/hidden.png";
+            }
+        }
+
+
+        let tempu=document.getElementById("transformer");
+        let tempi=document.getElementById("box-parent");
+        let check=1;
+        let click=document.getElementById('btn');
+        tempu.addEventListener('click',function(){
+            if(check==1){
+                tempi.style.transform="translateX(0vw) translateY(0vh)";
+                btn.setAttribute("style","display:block");
+                check=0;
+            }
+            else{
+                tempi.style.transform="translateX(40vw) translateY(-45vh) scale(0.01)";
+                btn.setAttribute("style","display:none");
+                check=1;
+            }
+        })
+    </script>
+</body>
+</html>

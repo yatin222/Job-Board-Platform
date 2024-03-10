@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JOBORBIT-Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="hidden" id="hide">
+        <p onclick="location.href='../Home/index.html'">Home</p>
+        <hr>
+        <p onclick="location.href='../profile/index.html'">Profile</p>
+        <hr>
+        <p onclick="location.href='../resume/index.html'">Resume Collection</p>
+        <hr>
+        <p onclick="location.href='../main/index.html'">Log out</p>
+    </div>
+    <nav>
+        <!-- <button class="btn" onclick="mode()" >Night</button> -->
+        <div class="menu">         
+            <div class="name">
+                <h1>JOBORBIT</h1>
+                <p>RECRUITER</p>
+            </div>
+            
+            <div onclick="dropdownmenu()" class="menu-content" id="dropdown">
+                <div class="initials">A</div>
+                <div  class="down-arrow">
+                    <img src="../down.png" alt="">
+                </div>
+            </div>
+        </div>
+    </nav>
+    <div class="manage-jobs-main">
+        <div class="manage-jobs">
+            <div class="heading">
+                <h2>Manage Jobs</h2>
+                <p>Manage your job posts and review applicants</p>
+            </div>
+            <div class="overview">
+                <p>Your Available Posts</p>
+                <div class="count">
+                    <p>Job Posts :1</p>
+                    <p>Promoted Jobs :2 </p>
+                </div>
+                <button class="purchase">Purchase Promoted Jobs</button>
+                <button class="purchase" id="btn2">Post a Job</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="posts-main">
+        <div class="filter">
+            <div>
+                <ul>
+                    <p>View:</p>
+                    <!-- <li>View: </li> -->
+                    <li>All</li>
+                    <li>Active</li>
+                    <li>Pending</li>
+                    <li>Rejected</li>
+                    <li>Removed & Expired</li>
+                </ul>
+            </div>
+            
+
+            <div class="search">
+                <label for="">SEARCH IN TITLE :</label>
+                <input type="text" name="" id="">
+                <!-- <div class="box"></div> -->
+            </div>
+        </div>
+
+
+
+
+
+
+        <div class="row-heading">
+        <ul>
+            <li>
+                <p>POSTED</p>
+                <img src="../sort-arrows-couple-pointing-up-and-down.png" alt="">
+            </li>
+            <li><p>DESIGNATION</p>
+                <img src="../sort-arrows-couple-pointing-up-and-down.png" alt=""></li>
+            <li><p>EXPERIENCE</p>
+                <img src="../sort-arrows-couple-pointing-up-and-down.png" alt=""></li>
+            <li><p>COMPANY</p>
+                <img src="../sort-arrows-couple-pointing-up-and-down.png" alt=""></li>
+            <li><p>LOCATION</p>
+                <img src="../sort-arrows-couple-pointing-up-and-down.png" alt=""></li>
+            <li><p>VIEWS</p>
+                <img src="../sort-arrows-couple-pointing-up-and-down.png" alt=""></li>
+            <li><p>APPLIED</p>
+                <img src="../sort-arrows-couple-pointing-up-and-down.png" alt=""></li>
+            <li><p>STATUS</p>
+                <img src="../sort-arrows-couple-pointing-up-and-down.png" alt=""></li>
+            <li><p>EDIT</p></li>
+        </ul>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+    
+    </div>
+
+    <div class="list-main">
+        <div class="jobs-list" id="faltu">
+            <h3>No Jobs Found</h3>
+            <p>Get Started hiring top talents on JOBORBIT!</p>
+            <button id="btn">Post a Job</button>
+        </div>
+        <div class="list" id="papa">
+
+        </div>
+    </div>
+
+    
+
+    <div class="form" id="form">
+        <h2>Post a Job</h2>
+        <input type="text" id="date" placeholder="Date">
+        <input type="text" name="" id="designation" placeholder="Job Designation">
+        <input type="text" name="" id="experience" placeholder="Experience in Yrs">
+        <input type="text" name="" id="company" placeholder="Company Name">
+        <input type="text" name="" id="location" placeholder="Location">
+        <input type="text" name="" id="status" placeholder="Status">
+        <div class="buttons">
+            <button class="submit" id="submit">Submit</button>
+            <button class="clear">Clear</button>
+        </div>
+        
+    </div>
+
+
+
+
+
+    <footer id="foot">
+
+        <div class="joborbit">
+            <h2>JOBORBIT</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum, necessitatibus itaque? Laudantium, magnam odit. Accusamus at reprehenderit alias nam possimus ducimus quidem perspiciatis architecto autem impedit vel debitis, corporis enim quae, in ullam non repellat sapiente. Dignissimos eum tempora officia quia atque dolore iure perspiciatis?</p>
+            <div class="social">
+                <img src="../main/socialmedia/icons8-facebook.gif" alt="">
+                <img src="../main/socialmedia/icons8-instagram.gif" alt="">
+                <img src="../main/socialmedia/icons8-linkedin.gif" alt="">
+                <img src="../main/socialmedia/icons8-twitter.gif" alt="">
+            </div>
+        </div>
+        <div class="explore">
+            <h2>Explore Your Potential</h2>
+            <ul>
+                <li>Top Companies</li>
+                <li>Terms of Services</li>
+                <li>Podcast</li>
+                <li>Careers</li>
+            </ul>
+        </div>
+        <div class="about">
+            <h2>About</h2>
+            <ul>
+                <li>FAQ</li>
+                <li>Get Inspired</li>
+                <li>Blog</li>
+            </ul>
+        </div>
+        <div class="support">
+            <h2>Support</h2>
+            <ul>
+                <li>Customer Service</li>
+                <li>Trust & Safety</li>
+                <li>Partnership</li>
+            </ul>
+        </div>
+        <div class="community">
+            <h2>Community</h2>
+            <ul>
+                <li>Community</li>
+                <li>Invite a Friend</li>
+                <li>Event</li>
+            </ul>
+        </div>
+    </footer>
+    <script src="./script.js"></script>
+</body>
+</html>

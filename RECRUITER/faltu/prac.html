@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Centered Dark Mode</title>
+    <!-- <link rel="stylesheet" href="styles.css">
+     -->
+     <style>
+        body {
+            margin: 0;
+            padding: 0;
+            overflow-x: hidden; /* Prevent horizontal scrollbars */
+            background-color: #f1f1f1; /* Light mode background color */
+            transition: background-color 1s;
+        }
+        
+        #darkModeButton {
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            padding: 10px 20px;
+            background-color: #333;
+            color: #fff;
+            cursor: pointer;
+            z-index: 1;
+        }
+        
+        #darkOverlay {
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            width: 0;
+            height: 0;
+            background-color: #000;
+            z-index: 0;
+            transition: width 1s, height 1s, top 1s, left 1s;
+            transform: translate(-50%, -50%);
+        }
+        
+        .dark-mode-active body {
+            background-color: #333; /* Dark mode background color */
+        }
+        
+     </style>
+</head>
+<body>
+    <div id="darkModeButton">Toggle Dark Mode</div>
+    <div id="darkOverlay"></div>
+    <!-- <script src="script.js"></script> -->
+    <script>
+        const darkModeButton = document.getElementById('darkModeButton');
+const darkOverlay = document.getElementById('darkOverlay');
+
+let darkModeActive = false;
+
+darkModeButton.addEventListener('click', () => {
+    if (!darkModeActive) {
+        darkOverlay.style.width = '200vw'; // Expand width beyond viewport width
+        darkOverlay.style.height = '200vh'; // Expand height beyond viewport height
+        darkOverlay.style.top = '0'; // Move to top corner
+        darkOverlay.style.left = '0'; // Move to left corner
+        document.body.classList.add('dark-mode-active');
+        darkModeActive = true;
+    } else {
+        darkOverlay.style.width = '0';
+        darkOverlay.style.height = '0';
+        darkOverlay.style.top = '50%';
+        darkOverlay.style.left = '50%';
+        document.body.classList.remove('dark-mode-active');
+        darkModeActive = false;
+    }
+});
+
+    </script>
+</body>
+</html>

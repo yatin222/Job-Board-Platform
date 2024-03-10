@@ -1,0 +1,222 @@
+*{
+    padding: 0;
+    margin: 0;
+    /* overflow-y: scroll; */
+}
+body{
+    overflow-y: scroll;
+}
+nav{
+    box-shadow: 5px 5px 5px gray;
+    /* border: 2px solid black; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* height: 8vh; */
+    position: sticky;
+    top: 0px;
+    width: 100%;
+    z-index: 1000;
+    background-color: rgb(38, 37, 37);
+    color: white;
+    padding: 20px;
+    box-sizing: border-box;
+    overflow: hidden;
+    padding-left: 30px;
+    padding-right: 30px;
+
+}
+
+nav h1{
+    font-size: 40px;
+    background: linear-gradient(100deg,#00aaff,#6b6868);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+nav .menu{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+nav .menu .name{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+nav .menu .menu-content{
+    background-color: white;
+    color: black;
+    height: 10px;
+    width: 10px;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 60px;
+    position: relative;
+}
+nav .menu .menu-content div{
+    position: absolute;
+    background-color: white;
+    color: black;
+    height: 10px;
+    width: 10px;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 60px;
+
+
+}
+nav .menu .menu-content .initials{
+    z-index: 1;
+    font-size: 25px;
+}
+nav .menu .menu-content .down-arrow img{
+    /* font-weight: 500; */
+    height: 30px;
+}
+
+nav .menu .menu-content:hover .initials{
+    z-index: -1;
+}
+
+
+.hidden{
+    border: 2px solid black;
+    position: absolute;
+    /* height: 100px; */
+    /* width: 100px; */
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: flex-start;
+    font-size: 20px;
+    gap: 10px;
+    top: 110px;
+    z-index: 4;
+    border-radius: 10px;
+    right: 10px;
+    display: none;
+    padding: 1em;
+    box-sizing: border-box;
+
+    /* color: white; */
+}
+.hidden hr{
+    width: 90%;
+}
+.hidden p:hover{
+    color: blue;
+    font-size: 25px;
+    cursor: pointer;
+}
+
+.navigation{
+    padding: 1em;
+    background-color: whitesmoke;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size:30px ;
+    gap: 2em;
+}
+
+.choose{
+    background-color:#00aaff;
+    border-radius: 10px;
+    box-sizing: border-box;
+    color: white;
+    padding: 0.5em;
+    font-size: 35px;
+}
+.navigation div:hover{
+    cursor: pointer;
+}
+.navigation div{
+    z-index: 2;
+    left: 43vw;
+}
+
+.main{
+    margin-top: 2em;
+    background-color: whitesmoke;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.main .main-content{
+    padding: 1em;
+    box-sizing: border-box;
+    width: 70%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-content: center;
+    align-items: center;gap: 2em;
+}
+.main .main-content .box{
+    height: 30vh;
+    width: 20vw;
+    border: 1px solid black;
+    border-radius: 10px;
+}
+.allposts-main{
+    margin-top: 2em;
+    background-color: whitesmoke;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    display: none;
+}
+.allposts-main .content{
+    padding: 1em;
+    box-sizing: border-box;
+    width: 70%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-content: center;
+    align-items: center;gap: 2em;
+}
+.allposts-main .content .box{
+    height: 30vh;
+    width: 20vw;
+    border: 1px solid black;
+    border-radius: 10px;
+
+}
+.box img{
+    width: 200px;
+    border-radius: 20px;
+}
+.box{
+    padding: 0px 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+}
+.box h3{
+    margin-bottom: 20px;
+}
+    /* margi */
+.box a{
+    width: 100px;
+    height: 20px;
+    border-radius: 20px;
+    padding: 5px 5px;
+    text-align: center;
+    text-decoration: none;
+    background-color: #00aaff ;
+    color: white;
+}
+.box span{
+    color: rgb(140, 53, 53);
+}

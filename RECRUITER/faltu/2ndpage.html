@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .parent{
+            width: 400px;
+            height: 400px;
+            border: 2px solid green;
+        }
+    </style>
+</head>
+<body>
+    <input type="text" name="" id="name">
+    <label for="name">name</label>
+    
+    <div class="parent" id="parent">
+        <button id="btn">daba bhai</button>
+    </div>
+    <script>    
+        let btn=document.getElementById("btn");
+        btn.addEventListener('click',function(){
+            let box=document.createElement("div");
+        box.setAttribute("style","width:200px; height:200px; border:2px solid black;")
+        let papa=document.getElementById("parent");
+        papa.appendChild(box);
+        })
+        
+    </script>
+</body>
+</html>

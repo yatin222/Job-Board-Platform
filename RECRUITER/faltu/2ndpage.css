@@ -1,0 +1,227 @@
+*{
+    margin: 0;
+    padding: 0.01rem;
+    font-family: 'Baloo Bhaijaan 2', sans-serif;
+}
+.navbar{
+    /* background-color: white; */
+    /* padding: 20px; */
+    box-sizing: border-box;
+    /* z-index: 2; */
+    /* opacity: 0.5; */
+    /* filter: blur(10px); */
+    /* box-shadow: 2px 2px 2px lightslategrey; */
+    /* position: absolute; */
+    /* top: 0px; */
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    height: 8vh;
+    box-sizing: border-box;
+    position: sticky;
+    top: 0px;
+    background-color: aliceblue;
+    z-index: 2;
+}
+/* .blur{
+    background-color: white;
+    position: absolute;
+    opacity: 0.8;
+    filter: blur(40px);
+    z-index: 1;
+    top: 0px;
+    height: 10vh;
+    width: 100%;
+
+} */
+.navbar .logo{
+    display: flex ;
+    position: relative;
+    /* justify-content: center; */
+    align-items: center;
+    font-size: 25px;
+    flex-direction: column;
+
+}
+.navbar .logo p{
+    position: absolute;
+    margin:0px;
+    padding: 0px;
+    top: 35px;
+    left: 1em;
+}
+.navbar ul{
+    display: flex;
+    list-style-type: none;
+    gap: 20px;
+    align-items: center;
+    font-weight: 300;
+    font-size: 20px;
+}
+.navbar ul a{
+    text-decoration: none;
+}
+.navbar ul .log a{
+    color: black;
+}
+.navbar ul .free{
+    color: white;
+    padding: 5px;
+    background-color: rgb(176, 176, 218);
+}
+.navbar ul .free a{
+    color: white;
+}
+
+
+
+
+
+.back{
+    /* z-index: 0; */
+    /* background-image: url(./leone-venter-VieM9BdZKFo-unsplash.jpg); */
+    height: 60vh;
+    width: 100%;
+    /* border: 2px solid black; */
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1em;
+}
+
+.sign{
+    /* border: 2px solid black; */
+    border-radius: 50px;    
+    height: 100%;
+    background-color: rgba(75, 75, 235, 0.101);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* grid-template-columns: 1fr 1fr; */
+    /* grid-template-rows: 1fr .2fr; */
+    /* padding: 20px; */
+    /* padding-top: 50px; */
+    /* padding-bottom: 50px; */
+    box-sizing: border-box;
+    /* height: 60vh; */
+    width: 60vw;
+    /* margin-top: 20px; */
+
+}
+  .login{
+    height: 90%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    /* margin: 10px; */
+    /* padding: 20px; */
+    width: 40vw;
+  }
+  .login .head h1{
+    font-size: 50px;
+
+  }
+  .login .head p{
+    font-size: 20px;
+  }
+  .column{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+  
+  }
+  .column label{
+    font-size: 16px;
+  }
+  .column input{
+    border: 1px solid gray;
+    border-radius: 50px;
+
+  }
+  .column input::placeholder{
+    padding-left: 10px;
+  }
+  .contact{
+    display: flex;
+    /* justify-content: space-between; */
+    gap: 30px;
+  }
+  .loc{
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+  }
+  .companyname input{
+    height: 4vh;
+    width: 100%;
+  }
+  .contact input{
+    height: 4vh;
+    width: 100%;
+  }
+  .loc input{
+    height: 4vh;
+    width: 100%;
+
+  }
+  .nextstep{
+    height: 4vh;
+    font-size: 1.5em;
+    padding-left: 10px;
+    padding-right: 10px;
+    box-sizing: border-box;
+    background-color: white;
+    border: 1px solid gray;
+    border-radius: 50px;
+  }
+
+
+
+
+
+.flexkarugamai{
+  display: grid;
+  grid-template-rows: 1fr 0.2fr;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  margin-top: 10vh;
+  margin-bottom: 5vh;
+}
+.flexkarugamai .boxi{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.flexkarugamai .boxi .count span{
+  font-size: 35px !important;
+  font-weight: 800;
+}
+.flexkarugamai .boxi p{
+  font-size: 20px;
+}
+.flexkarugamai .one{
+  grid-row: 1/2;
+  grid-column: 2/3;
+}
+.flexkarugamai .two{
+  grid-row: 1/2;
+  grid-column: 3/4;
+}
+.flexkarugamai .three{
+  grid-row: 1/2;
+  grid-column: 4/5;
+}
+
+.foot{
+  background-color: rgb(45, 45, 203);
+  height: 20vh;
+}
+.column input{
+  padding-left: 10px;
+}
+.column input::placeholder{
+  font-size: 1.3em;
+}

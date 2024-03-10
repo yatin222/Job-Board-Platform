@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        nav{
+            background-color: blue;
+        }
+        nav div{
+            width: 100px;
+            height: 100px;
+            background-color: yellow;
+            transition: transform 0.2s ease-in-out;
+        }
+
+    </style>
+</head>
+<body>
+    <nav>
+        <div id="box">
+            <p>login</p>
+        </div>
+        <button id="btn"> daba bhai</button>
+    </nav>
+    <script>
+        let x=40;
+        let y=40;
+        let button=document.getElementById("btn");
+        let ele=document.getElementById("box");
+        button.addEventListener('click',function(){
+            ele.style.transform = "translateX(" + x + "vw) translateY(" + y + "vh) scaleX(2)";
+            if(x==40){
+                x=0;
+                y=0;
+            }
+            else{
+                x=40; 
+                y=40;
+            }
+        });
+    </script>
+    </body>
+</html>

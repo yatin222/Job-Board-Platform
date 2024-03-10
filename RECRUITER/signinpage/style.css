@@ -1,0 +1,198 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+.parent{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content:center ;
+    align-items: center;
+    background-color:#2755ed;
+    position: relative;
+}
+.parent .container{
+    height: 60vh;
+    width: 60vw;
+    border-radius: 20px;
+    background-color: whitesmoke;
+    position: relative;
+    /* border: 2px solid red; */
+}
+.parent .container .cover{
+    position: absolute;
+    height: 60vh;
+    width: 30vw;
+    background-color: rgba(0, 0, 0, 0.114);
+    border-radius: 20px;
+    /* border: 2px solid green; */
+    background: radial-gradient(circle at 10% 20%, rgb(0, 0, 0) 0%, rgb(64, 64, 64) 90.2%);
+    transition: transform 0.5s ease-in-out;
+}
+.parent .container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.parent .container .login{
+    padding: 50px;
+    grid-column: 1/2;
+}
+.parent .container .signup{
+    grid-column: 2/3;
+    padding: 50px;
+
+}
+.parent .container .login .box{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+.parent .container h2{
+    font-size: 30px;
+    font-weight: 300;
+    margin-bottom: 50px;
+}
+.parent .container .login input{
+    height: 5vh;
+    width: 20vw;
+    border-radius: 10px;
+    border: 1px solid black;
+}
+.parent .container .login input{
+    font-size: 15px;
+    padding: 10px;
+    box-sizing: border-box;
+}
+.pas{
+    margin-bottom: 50px;
+}
+.login button{
+    width: 15vw;
+    height: 5vh;
+    background-color: #2755ed;
+    border-radius: 10px;
+    border: 1px solid black;
+    color: white;
+    font-size: 15px;
+
+}
+.login p span{
+    color: #2755ed;
+
+}
+.signup .box{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+.signup .box input{
+    height: 5vh;
+    width: 20vw;
+    border-radius: 10px;
+    border: 1px solid black;
+    padding: 10px;
+    font-size: 15px;
+    box-sizing: border-box;
+
+}
+.signup .box .name{
+    display: flex;
+    gap: 10px;
+}
+.signup .box .name input{
+    width: 10vw;
+}
+.signup .box .accept{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+}
+.signup .box .accept input{
+    display: inline;
+    height: 15px;
+    width: auto;
+}
+.signup .box button{
+    width: 15vw;
+    height: 5vh;
+    background-color: #2755ed;
+    border-radius: 10px;
+    border: 1px solid black;
+    font-size: 15px;
+    color: white;
+} 
+.login .pas{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+.login .pas img{
+    position: absolute;
+    right: 1em;
+    height: 20px;
+}
+.signup .pass{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+.signup .pass img{
+    /* position: absolute; */
+    /* right: 1em; */
+    /* height: 20px; */
+}
+.signup .confirmpass{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+.signup .confirmpass img{
+    position: absolute;
+    right: 1em;
+    height: 20px;
+}
+.cover{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+#btn{
+    /* position: absolute; */
+    /* top: 47vh; */
+    /* left: 30vw; */
+    height: 5vh;
+    width: 10vw;
+    border-radius: 10px;
+    border: 1px solid black;
+    /* content: 'Log in; */
+    font-size: 2vh;
+    background-color: #2755ed8e;
+    color: white;
+    transition: transform 0.5s ease-in-out;
+}
+
+/* .container .login,.signup{
+    display: none;
+} */
+
+
+
+.container{
+    transform: translateX(40vw) translateY(-45vh) scale(0.01) ;
+    transition: transform 0.2s ease-in-out;
+    /* transform: ; */
+
+}
+.change{
+    /* transform: scale(0.1); */
+    display: none;
+}
